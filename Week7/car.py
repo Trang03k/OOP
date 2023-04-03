@@ -1,3 +1,4 @@
+
 #Task 1
 class Car:
     def __init__(self,topSpeed):
@@ -9,7 +10,7 @@ class Car:
         if self.__topSpeed > 0:
             self.__topSpeed = topSpeed
         else:
-            raise ValueError(f'Invalid top speed {self.__topSpeed}')
+            raise Exception(f'Invalid top speed {self.__topSpeed}')
     
     def getTopSpeed(self):
         return self.__topSpeed
@@ -80,4 +81,6 @@ try:
     topspeed = Car(float(input('Please enter a number:')))
 except: 
     print('I caught an exception ')
+
+
 
